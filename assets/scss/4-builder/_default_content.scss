@@ -1,0 +1,39 @@
+.default-content {
+	padding: rem(30 0);
+	@include min(lg) {
+		padding: rem(49 0);
+	}
+
+}
+
+.border-grey {
+	border-bottom: 1px solid rgba($blue, 0.1);
+}
+
+.no-border-grey {
+	border-bottom: none;
+}
+
+.text-content {
+	font-size: rem(24);
+	margin-bottom: rem(80);
+
+	h4 {
+		line-height: 31px;
+	}
+
+	li {
+		h5 {
+			margin-bottom: 0;
+		}
+	}
+
+	h5 {
+		line-height: 32px;
+	}
+
+	p {
+		line-height: 31px;
+	}
+}
+

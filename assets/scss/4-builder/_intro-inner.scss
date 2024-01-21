@@ -1,0 +1,30 @@
+.intro-inner {
+	min-height: 400px;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 225px;
+		@include min(lg) {
+		min-height: 440px;
+		margin-bottom: 106px;
+	}
+
+	.c-title {
+		margin-bottom: rem(30);
+	}
+	.intro__paragraph{
+		margin-bottom: 0;
+	}
+	.intro-wrapper{
+		margin-bottom: 95px;
+		@include min(md) {
+			margin-bottom: 53px;
+		}
+		@include min(lg) {
+			margin-bottom: -98px;
+		}
+	}
+}
+.border-color{
+	border-bottom: $l-blue 1px solid;
+}

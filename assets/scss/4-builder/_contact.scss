@@ -1,0 +1,106 @@
+.contact {
+	padding: rem(80 0);
+	background-color: $w;
+	position: relative;
+	@include min(lg) {
+		padding: rem(160 0);
+	}
+
+	&:after {
+		content: '';
+		display: block;
+		background-color: $xl-grey;
+		top: 50%;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 0;
+		position: absolute;
+	}
+
+	&:before {
+		display: none;
+		@include min(lg) {
+			content: '';
+			display: block;
+			background-color: $l-blue;
+			top: 50%;
+			bottom: 0;
+			left: 0;
+			right: 66%;
+			z-index: 1;
+			position: absolute;
+		}
+	}
+}
+
+.contact-image {
+	position: relative;
+
+	&:after {
+		padding-bottom: 67%;
+		display: block;
+		content: '';
+	}
+
+	.flex-image {
+		z-index: 1;
+	}
+}
+
+.contact-info {
+	padding-top: 0;
+	position: absolute;
+	z-index: 2;
+	@include min(lg) {
+		padding-top: rem(85);
+	}
+
+	.section-sup-title {
+		margin-bottom: rem(20);
+	}
+
+	h2 {
+		margin-bottom: rem(30);
+		@include min(lg) {
+			margin-bottom: rem(80);
+		}
+	}
+}
+
+.email-company, .phone-company {
+	color: $color-text;
+
+	svg {
+		height: 22px;
+		width: 30px;
+		margin-right: rem(25);
+		fill: $green;
+		@include min(lg) {
+			height: 26px;
+			width: 35px;
+		}
+	}
+}
+
+.background-row {
+	position: relative;
+	z-index: 2;
+	margin-bottom: rem(150px);
+	@include min(md) {
+		margin-bottom: 0;
+	}
+}
+
+.contact-info-col {
+	background-color: $w;
+
+
+	@include min(lg) {
+		padding-left: 10.7%;
+	}
+}
+
+.contact-info__wrapper {
+	margin-bottom: 38px;
+}

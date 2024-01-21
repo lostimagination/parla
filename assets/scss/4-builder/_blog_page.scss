@@ -1,0 +1,25 @@
+.blog-page {
+	padding: rem(30 0 40);
+	@include min(lg) {
+		padding: rem(49 0 160);
+	}
+	//.pagination {
+	//	.page-numbers, .current {
+	//		border-color: $l-blue;
+	//	}
+	//
+	//	li {
+	//		a, span, .current {
+	//			&:hover, &:active  {
+	//				border-color: $l-blue;
+	//				background-color: $l-blue;
+	//				color: $b;
+	//			}
+	//		}
+	//	}
+	//}
+}
+
+
+
+

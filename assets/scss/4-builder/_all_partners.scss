@@ -1,0 +1,31 @@
+.partners {
+	padding: rem(40 0);
+	border-bottom: 1px solid $middle-grey;
+}
+
+.partners-wrapper {
+	max-width: 1623px;
+	margin: 0 auto;
+	position: relative;
+	.swiper-wrapper {
+		align-items: center;
+	}
+	.swiper-button-next{
+		right: -72px;
+	}
+	.swiper-button-prev{
+		left: -72px;
+	}
+}
+
+.swiper-button-next, .swiper-button-prev {
+	display: none;
+	svg {
+		fill: $grey;
+		height: 28px;
+		width: 16px;
+	}
+	@include min(md) {
+		display: block;
+	}
+}

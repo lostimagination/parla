@@ -1,0 +1,28 @@
+.all-progress {
+	padding: rem(40 0);
+	@include min(md) {
+		padding: rem(80 0);
+	}
+	.col-lg-4{
+		border-right: 1px solid $w;
+	}
+}
+
+.progress-number, .progress-plus {
+	font-size: 80px;
+	font-weight: 700;
+
+}
+.number-wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.progress-wrapper {
+	max-width: 385px;
+	margin: 0 auto;
+	text-align: center;
+}
+.paragraph-card{
+	line-height: 25px;
+}

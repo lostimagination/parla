@@ -1,0 +1,25 @@
+.reviews-list {
+	.container {
+		div:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+.personal-list-position {
+	position: relative;
+	display: block;
+
+	.quote-right {
+		left: 100px;
+		bottom: 0;
+	}
+}
+
+.personal-wrapper {
+	padding: rem(40 0);
+	@include min(lg) {
+		padding: rem(80 0);
+	}
+	border-bottom: 1px solid $xl-grey;
+}

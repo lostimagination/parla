@@ -1,0 +1,130 @@
+.trainings {
+	padding: rem(80 0);
+	@include min(lg) {
+		padding: rem(160 0);
+	}
+
+	.m-title .c-title {
+		margin-bottom: 0;
+	}
+
+	.m-title {
+		margin-bottom: rem(30);
+	}
+
+}
+
+.trainings-paragraph {
+	font-size: rem(18);
+	margin-bottom: rem(30);
+	font-family: Arial, sans-serif;
+}
+
+.trainings-conditions {
+	display: flex;
+	margin-bottom: rem(60);
+
+	.pdf-white {
+		fill: $w;
+		margin-right: rem(17);
+	}
+}
+
+.file-conditions {
+	background-color: $l-b;
+	color: $w;
+	font-weight: 400;
+	font-size: 20px;
+	padding: rem(18 30);
+	margin-right: rem(10);
+}
+
+.training-wrapper {
+	border-bottom: 1px solid $middle-grey;
+	position: relative;
+	padding-left: rem(25);
+
+	&:before {
+		display: block;
+		content: '';
+		position: absolute;
+		height: rem(100);
+		width: rem(10);
+		left: 0;
+		top: 0;
+		background-color: $l-blue;
+	}
+}
+
+.label-trainings {
+	margin-bottom: rem(10);
+	text-transform: uppercase;
+	font-size: rem(14);
+}
+
+.price-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: $color-text;
+	margin-bottom: rem(10);
+
+	svg {
+		fill: $blue;
+		width: 20px;
+		height: 20px;
+		margin: rem(0 10);
+	}
+
+}
+.price-wrapper__title{
+	color: $color-text;
+	font-size: rem(20);
+	font-weight: 400;
+	line-height: 1.1;
+}
+.price-wrapper__price {
+	margin-bottom: 0;
+	font-weight: 700;
+	font-size: rem(24);
+}
+
+.price-wrapper__all-pdf {
+	display: flex;
+	align-items: center;
+}
+
+.events-list {
+	display: flex;
+}
+
+.event-dates {
+	display: flex;
+
+}
+
+.date {
+	padding: rem(0 30 0 12);
+	margin-bottom: rem(10);
+	position: relative;
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 8px;
+		height: 8px;
+		background-color: $green;
+	}
+}
+
+.all-trainings-row {
+	.col-lg-6:nth-last-child(-n+2) {
+		.training-wrapper {
+			border: none;
+		}
+	}
+}

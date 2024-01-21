@@ -1,0 +1,39 @@
+.job-offers {
+	padding: rem(40 0);
+	@include min(lg) {
+		padding: rem(80 0);
+	}
+
+	.h4 {
+		line-height: 31px;
+		margin-bottom: rem(20);
+	}
+}
+
+.career-wrapper-extra {
+	border-bottom: 1px solid $xl-grey;
+	padding: rem(40 0 40);
+}
+
+.career-wrapper {
+	position: relative;
+	margin-left: rem(24);
+
+	&:after {
+		position: absolute;
+		content: '';
+		display: block;
+		border-left: 10px solid $l-blue;
+		top: 0;
+		bottom: 0;
+		left: -24px;
+		height: 100%;
+	}
+}
+
+.title-career {
+	font-size: 24px;
+}
+.career-wrapper-extra:not(:first-child){
+	border-bottom: none;
+}

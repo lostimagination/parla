@@ -1,0 +1,45 @@
+.post {
+	&-thumbnail {
+		margin-bottom: rem(50);
+	}
+
+	&-header {
+		margin-bottom: rem(50);
+	}
+
+	&-content,
+	&-navigation,
+	&-related {
+		margin-bottom: rem(50);
+
+		@include min(lg) {
+			margin-bottom: rem(70);
+		}
+	}
+}
+
+.nav-links {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: rem(20);
+
+	@include min(lg) {
+		flex-direction: row;
+		gap: rem(50);
+	}
+}
+.single-post-content{
+	padding: rem(30 0 40);
+	@include min(lg) {
+		padding: rem(40 0 80);
+	}
+}
+.paragraph-post{
+	padding-right: rem(50);
+	margin-bottom: rem(40);
+	line-height: 31px;
+}
+.image-post{
+	margin-bottom: rem(40);
+}

@@ -1,0 +1,17 @@
+.company-data{
+	padding: rem(20 0 40);
+
+	@include min(lg) {
+		padding: rem(40 0 80);
+	}
+	.c-title{
+		margin-bottom: rem(30);
+	}
+	h4{
+		line-height: 32px;
+		margin-bottom: rem(60);
+	}
+}
+.all-data{
+	border-bottom: 1px solid $middle-grey;
+}

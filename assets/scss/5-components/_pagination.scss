@@ -1,0 +1,51 @@
+.pagination {
+	margin-top: rem(20);
+
+	@include min(lg) {
+		margin-top: rem(40);
+	}
+
+	ul {
+		@include unstyled-list;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: rem(8);
+		border: none;
+
+		li {
+			border: none;
+			a, span {
+				@include tr;
+				min-width: rem(36);
+				height: rem(36);
+				background-color: $w;
+				color: $color-text;
+				font-weight: 400;
+				font-size: rem(16);
+				line-height: 1;
+				border: 1px solid $l-blue;
+				border-radius: $radius;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				padding: rem(0 7);
+
+				&.current {
+					&:not(.dots) {
+						background-color: $l-blue;
+						color: $b;
+						border-color: $l-blue;
+					}
+				}
+
+				&:hover {
+					background-color: $w;
+					color: $l-blue;
+					border-color: $l-blue;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.quality {
+	padding: rem(40);
+	background-color: $xl-grey;
+	@include min(lg) {
+		padding: rem(80);
+	}
+
+	.c-title {
+		margin-bottom: rem(30);
+	}
+
+	.c-block {
+		margin-bottom: 0;
+	}
+
+}
+
+.list-wrapper {
+	padding-bottom: rem(40);
+	p {
+		line-height: 32px;
+		font-family: Arial, sans-serif;
+		padding-left: rem(20);
+	}
+}
+
+.quality {
+
+	.border-row:not(:last-child) {
+		border-bottom: 1px solid $l-grey;
+	}
+
+}
