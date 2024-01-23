@@ -1,0 +1,20 @@
+.question {
+	background-color: $xl-grey;
+	padding: rem(40 0 80);
+
+	@include min(lg) {
+		padding: rem(80 0 160);
+	}
+
+	.c-title {
+		margin-bottom: rem(30);
+	}
+}
+
+.register-form-margin {
+	padding-bottom: rem(30);
+
+	@include min(lg) {
+		padding-bottom: rem(60);
+	}
+}

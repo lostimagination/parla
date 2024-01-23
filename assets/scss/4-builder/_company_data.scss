@@ -1,17 +1,50 @@
-.company-data{
-	padding: rem(20 0 40);
+.company-data {
+	padding: rem(20 0 0);
 
 	@include min(lg) {
-		padding: rem(40 0 80);
+		padding: rem(40 0 0);
 	}
-	.c-title{
+
+	.c-title {
 		margin-bottom: rem(30);
 	}
-	h4{
+
+	h4 {
 		line-height: 32px;
 		margin-bottom: rem(60);
 	}
+
+	.socials {
+
+		.socials__item {
+
+			svg {
+				fill: $green;
+			}
+		}
+	}
 }
-.all-data{
+
+.all-data {
 	border-bottom: 1px solid $middle-grey;
+	padding-bottom: rem(80);
+
+	.link-with-icon {
+
+		svg,
+		.link-with-icon__phone,
+		.link-with-icon__email {
+			margin-right: rem(7);
+		}
+	}
+
+	.socials {
+		gap: 33px;
+
+		svg {
+			width: 20px;
+			height: 20px;
+		}
+	}
 }
+

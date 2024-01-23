@@ -1,10 +1,5 @@
 // Base blocks
 .c-block {
-	margin-bottom: rem(50);
-
-	@include min(lg) {
-		margin-bottom: rem(100);
-	}
 
 	&--padding {
 		padding: rem(45 0 50);

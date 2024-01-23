@@ -1,4 +1,4 @@
-<section class="intro">
+<section id="intro" class="intro">
 	<?php if ( $background_image = get_sub_field( 'background_image' ) ) : ?>
 		<?php echo wp_get_attachment_image( $background_image['id'], 'large', false, array( 'class' => 'flex-image' ) ); ?>
 	<?php endif; ?>

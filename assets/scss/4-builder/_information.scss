@@ -20,6 +20,7 @@
 }
 
 .register-form {
+
 	label {
 		display: flex;
 		margin-bottom: rem(5);
@@ -48,36 +49,48 @@
 		font-weight: 400;
 		border-bottom: 1px solid;
 	}
+
+	.row + .row {
+		margin-top: 0;
+	}
 }
-.register-form__tooltip{
+
+.register-form__tooltip {
 	position: absolute;
 	z-index: 1;
-	right:  45px;
+	right: 45px;
 	top: 20px;
 	color: $light-text;
 	font-size: rem(12);
 	font-weight: 400;
+
 	@include min(lg) {
-		right:  97px;
-			}
+		right: 97px;
+	}
 }
+
 .register-form__top {
 	position: relative;
 	background-color: $w;
 	padding: rem(30 45 15);
 	border-bottom: 1px solid $middle-grey;
+
 	@include min(lg) {
 		padding: rem(60 97 30);
 	}
-.nice-select {
-	.current{
-		font-size: rem(18);
-		color: $color-text;
-		text-overflow: ellipsis;
-		overflow: hidden;
+
+	.nice-select {
+
+		.current {
+			font-size: rem(18);
+			color: $color-text;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
 	}
-}
-span {
+
+	span {
+
 		.wpcf7-list-item {
 			margin-left: 0;
 		}
@@ -85,6 +98,7 @@ span {
 }
 
 .no-margin {
+
 	.nice-select {
 		margin-bottom: 0;
 	}
@@ -93,13 +107,17 @@ span {
 .register-form__bottom {
 	background-color: $w;
 	padding: rem(15 45 30);
+
 	@include min(lg) {
 		padding: rem(30 97 60);
 	}
+
 }
 
 .information-form-wrapper {
+
 	span {
+
 		.wpcf7-list-item {
 			margin-left: 0;
 		}

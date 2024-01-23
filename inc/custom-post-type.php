@@ -205,7 +205,22 @@ function it_custom_init() {
 			'rewrite'           => array( 'slug' => 'project-category' )
 		)
 	);
-
+// taxonomy: Project Category
+	register_taxonomy( 'position-category',
+		array( 'team' ), /* name of CPT */
+		array(
+			'labels'            => array(
+				'name'          => __( 'Position categories', 'parla' ),
+				'singular_name' => __( 'Position categories', 'parla' ),
+				'add_new_item'  => __( 'Add New Category', 'parla' ),
+			),
+			'hierarchical'      => true,     /* if this is true, it acts like categories */
+			'show_admin_column' => true,
+			'show_ui'           => true,
+			'query_var'         => true,
+			'rewrite'           => array( 'slug' => 'position-category' )
+		)
+	);
 }
 
 add_action( 'init', 'it_custom_init' );

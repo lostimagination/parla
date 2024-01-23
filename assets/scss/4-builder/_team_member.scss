@@ -1,11 +1,13 @@
 .team-member {
 	padding: rem(40 0 80);
 	position: relative;
-@include min(lg) {
-	padding: rem(80 0 160);
-}
-	&:before {
-		content: '';
+
+	@include min(lg) {
+		padding: rem(80 0 160);
+	}
+
+	&::before {
+		content: "";
 		display: block;
 		position: absolute;
 		background-color: $l-blue;
@@ -18,8 +20,8 @@
 
 	.container {
 
-		&:after {
-			content: '';
+		&::after {
+			content: "";
 			display: block;
 			position: absolute;
 			background-color: $xl-grey;
@@ -29,10 +31,12 @@
 			right: 0;
 			z-index: -2;
 		}
-		.row{
+
+		.row {
 			background-color: $w;
 		}
-		.col-md-4{
+
+		.col-md-4 {
 			padding-left: 0;
 		}
 	}
@@ -42,6 +46,7 @@
 		padding-right: rem(0);
 		height: 100%;
 		object-fit: cover;
+
 		@include min(lg) {
 			width: 100%;
 			padding-right: rem(30);
@@ -52,6 +57,7 @@
 	.section-sup-title {
 		padding-top: rem(0);
 		margin-bottom: rem(20);
+
 		@include min(lg) {
 			padding-top: rem(85);
 		}
@@ -67,7 +73,8 @@
 	}
 }
 
-svg.team-member__phone, svg.team-member__email {
+svg.team-member__phone,
+svg.team-member__email {
 	width: 26px;
 	height: 26px;
 	fill: $green;

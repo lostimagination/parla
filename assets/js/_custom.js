@@ -1,7 +1,7 @@
 import vars from './_vars';
 
 // Helper functions:
-import {throttle} from './functions/throttle';
+// import {throttle} from './functions/throttle';
 
 // Plugins (NPM modules and uploaded files):
 import Swiper, {Navigation, Pagination, Autoplay, Thumbs} from 'swiper/bundle'; // import Swiper bundle with all modules installed
@@ -15,14 +15,14 @@ jQuery(document).ready(function ($) {
 	/**
 	 * Tweak for mobiles (full height)
 	 */
-	const fixFullheight = () => {
-		const vh = window.innerHeight * 0.01;
-		vars.htmlEl.style.setProperty('--vh', `${vh}px`);
-	};
-
-	fixFullheight();
-	const fixHeight = throttle(fixFullheight);
-	window.addEventListener('resize', fixHeight);
+	// const fixFullheight = () => {
+	// 	const vh = window.innerHeight * 0.01;
+	// 	vars.htmlEl.style.setProperty('--vh', `${vh}px`);
+	// };
+	//
+	// fixFullheight();
+	// const fixHeight = throttle(fixFullheight);
+	// window.addEventListener('resize', fixHeight);
 
 
 	/**
@@ -45,9 +45,11 @@ jQuery(document).ready(function ($) {
 	/**
 	 * Trigger NiceSelect update after Woocommerce Update variations
 	 */
-	$(".variations_form").on("woocommerce_variation_has_changed", function () {
-		$('.variations_form select').niceSelect('update');
-	});
+	if ($(".variations_form").length > 0) {
+		$(".variations_form").on("woocommerce_variation_has_changed", function () {
+			$('.variations_form select').niceSelect('update');
+		});
+	}
 
 
 	/**
@@ -96,7 +98,6 @@ jQuery(document).ready(function ($) {
 	 * Slider reviews
 	 */
 	document.querySelectorAll('.reviews-slider').forEach(slider => {
-		const wrapper = slider.closest('.reviews-slider');
 		const swiper = new Swiper(slider, {
 
 			slidesPerView: 1,
@@ -112,8 +113,8 @@ jQuery(document).ready(function ($) {
 				},
 			},
 			navigation: {
-				nextEl: wrapper.querySelector('.swiper-button-next'),
-				prevEl: wrapper.querySelector('.swiper-button-prev'),
+				nextEl: slider.querySelector('.swiper-button-next'),
+				prevEl: slider.querySelector('.swiper-button-prev'),
 			},
 			on: {
 				// lazy load images
@@ -130,6 +131,6 @@ jQuery(document).ready(function ($) {
 	;
 	// JS Lazyload fix for images on the first screen.
 	// This code should run after all the code is initiated.
-	$(window).trigger('scroll');
+	// $(window).trigger('scroll');
 
 });
