@@ -127,10 +127,137 @@ jQuery(document).ready(function ($) {
 			}
 		});
 
-	})
-	;
+	});
 	// JS Lazyload fix for images on the first screen.
 	// This code should run after all the code is initiated.
 	// $(window).trigger('scroll');
+
+	const i = 1;
+	console.log(i);
+	const words = 'orange';
+	console.log(words);
+	(function () {
+		let admin, name;
+		name = 'Vasilij';
+		admin = name;
+		console.log(admin);
+	})();
+
+	(function () {
+		let planetName = [3.123, 4];
+		let personName = 'Olga';
+		console.log(planetName);
+		console.log(typeof planetName);
+	})();
+	let userAge = '72' / '2';
+	console.log(userAge);
+	console.log(typeof userAge);
+	let userAgeN = 72 / 0;
+	console.log(userAgeN);
+	console.log(typeof userAgeN);
+	let userOleg = 26;
+	let olegInfo = `Person : ${userOleg}`;
+	console.log(olegInfo);
+
+	// (function () {
+	// 	let userName = prompt('what is you name?');
+	// 	console.log(userName);
+	// })();
+	let random;
+	const randomBtn = document.querySelector(".js-drink-button");
+	const randomResult = document.querySelector(".ba-random-result");
+
+	randomBtn.addEventListener('click', function () {
+		// get random
+		// random = Math.random() * 10;
+		// console.log(random);
+		// random = Math.floor(random) + 1;
+		// // game
+		// console.log(random);
+		// if(Math.random(random) > 0.5) {
+		// 	random = 'orel';
+		// } else {
+		// 	random = 'reshka';
+		// }
+		// Game Casino
+		// var num1, num2;
+		// num1 = Math.random() * 6;
+		// num2 = Math.random() * 6;
+		//
+		// num1 = Math.ceil((num1));
+		// num2 = Math.ceil((num2));
+		// random = num1 + " : " + num2;
+		// random = `Result is : ${num1} : ${num2}`;
+		//
+		// 	randomResult.textContent = random;
+
+		// beetween_gray
+		// const num1 = +prompt('Enter random number');
+		// const num2 = +prompt('Enter random number');
+		// let max , min;
+		// if(num1 > num2){
+		// 	max = num1;
+		// 	min = num2;
+		// } else {
+		// 	max = num2;
+		// 	min = num1;
+		// }
+		//
+		// const randomArb = Math.random() * (max - min) + min;
+		// randomResult.textContent = Math.floor(randomArb);
+
+		// Термальный
+		// оператор
+// 		let result,
+// 			a = 2,
+// 			b = 7;
+// 		// if (a + b > 4) {
+// 		// 	result = 'Mnogo';
+// 		// } else {
+// 		// 	result = 'Malo';
+// 		// }
+//
+// 		  result = (a + b > 4) ? 'Mnogo' : 'Malo';
+// console.log(result);
+	});
+	// let userAnswer = prompt('Kakoe nazvanie JavaScript?') ;
+	// if (userAnswer.toLowerCase() === 'ecmascript'){
+	// 	alert('ty krut!');
+	// }else {
+	// 	alert('Idi uchi Js');
+	// };
+
+
+	function checkVisitor() {
+		const userAnswer = prompt('Kto prishel?');
+		console.log(userAnswer);
+
+		if (typeof userAnswer !== 'string') {
+			alert('otmena');
+			return;
+		}
+
+		if (  typeof userAnswer === 'string' && userAnswer.toLowerCase() !== 'admin') {
+			alert('ya vas ne znayu');
+			return;
+		}
+
+		const passAnswer = prompt('password?');
+
+		if (!passAnswer) {
+			alert('otmena');
+			return;
+		}
+
+		if (passAnswer !== 'Black vlastelin') {
+			alert('password ne veren');
+			return;
+		}
+
+		alert('Dobro pozalovat');
+	}
+
+	checkVisitor();
+
 
 });

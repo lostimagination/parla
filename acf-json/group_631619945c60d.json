@@ -730,6 +730,70 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_65b2426d6ee69": {
+                    "key": "layout_65b2426d6ee69",
+                    "name": "trainers",
+                    "label": "Trainers",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65b243413a93d",
+                            "label": "Trainers clone",
+                            "name": "trainers_clone",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_65b2437b524fb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_65b8ff053264f": {
+                    "key": "layout_65b8ff053264f",
+                    "name": "all_partners_full_list",
+                    "label": "All partners full list",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_65b8ff1f32652",
+                            "label": "All partner clone",
+                            "name": "all_partner_clone",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_65b8fcf33ee74"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_631619aec7e5e": {
                     "key": "layout_631619aec7e5e",
                     "name": "hero",
@@ -976,5 +1040,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1705941347
+    "modified": 1706623723
 }

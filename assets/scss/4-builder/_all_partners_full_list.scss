@@ -1,0 +1,26 @@
+.all-partners-full {
+	padding: rem(20 0 40);
+
+	@include min(lg) {
+		padding: rem(44 0 150);
+	}
+}
+
+.partners-list-wrapper {
+	padding: rem(30);
+	border: 1px solid $ml-grey;
+	height: 100%;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.title-partner {
+	margin-bottom: rem(30);
+}
+
+.logo-partners {
+	flex-grow: 1;
+	object-fit: contain;
+	margin-bottom: rem(30);
+}

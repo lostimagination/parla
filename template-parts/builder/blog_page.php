@@ -33,7 +33,6 @@
 							<?php the_post_thumbnail( 'full', array( 'class' => 'flex-image' ) ); ?>
 							<div class="card-blog__wrapper">
 								<h3><?php the_title(); ?></h3>
-								<?php the_content(); ?>
 								<a class="card-blog__link card-blog__link--border" href="<?php the_permalink(); ?>">
 									<?php esc_html_e( 'weiterlesen', 'parla' ); ?>
 
